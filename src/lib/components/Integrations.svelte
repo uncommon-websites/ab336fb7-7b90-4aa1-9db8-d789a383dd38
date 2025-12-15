@@ -3,9 +3,9 @@
     <div class="mb-12">
       <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Integrations</div>
       <h2 class="text-3xl font-semibold text-gray-900 mb-4">
-        Bring all of your ecommerce apps together
+        Works with your worship software
       </h2>
-      <p class="text-gray-500">Connect all your existing data and ecommerce tools in one place.</p>
+      <p class="text-gray-500">Connect CaptionKit with the tools you already use to manage your services.</p>
       <a href="#" class="text-sm font-medium text-primary-600 hover:text-primary-700 flex items-center gap-1 mt-4">
         View all integrations 
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -13,12 +13,36 @@
     </div>
 
     <div class="flex flex-wrap gap-4">
-      {#each Array(10) as _, i}
-        <div class="w-16 h-16 bg-gray-50 rounded-xl flex items-center justify-center grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-           <!-- Placeholder for app icons -->
-           <div class="w-8 h-8 rounded bg-gray-300"></div>
-        </div>
-      {/each}
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">Planning Center</span>
+      </div>
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">ProPresenter</span>
+      </div>
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">EasyWorship</span>
+      </div>
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">MediaShout</span>
+      </div>
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">Proclaim</span>
+      </div>
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">Faithlife</span>
+      </div>
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">OpenLP</span>
+      </div>
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">Zoom</span>
+      </div>
+      <div class="px-6 py-4 bg-gray-50 rounded-xl flex items-center justify-center hover:bg-gray-100 transition-all duration-300">
+        <span class="font-semibold text-gray-700">YouTube Live</span>
+      </div>
+      <div class="px-6 py-4 bg-primary-50 rounded-xl flex items-center justify-center border border-primary-200">
+        <span class="font-semibold text-primary-700">+ Custom API</span>
+      </div>
     </div>
   </div>
 </section>

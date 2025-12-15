@@ -11,6 +11,12 @@
   import Footer from "$lib/components/Footer.svelte";
 </script>
 
+<svelte:head>
+  <title>CaptionKit - Multilingual Church Accessibility with Real-Time Translation</title>
+  <meta name="description" content="Make worship accessible in 60+ languages with CaptionKit's real-time speech recognition and instant translation. Affordable captioning for churches starting at $99/month." />
+  <meta name="keywords" content="church captions, multilingual church, real-time translation, church accessibility, worship captioning, ADA compliance" />
+</svelte:head>
+
 <Header />
 
 <main>
@@ -18,240 +24,271 @@
   <Stats />
   <Steps />
   
-  <!-- Feature 1: Convert signups -->
+  <!-- Feature 1: Real-time Speech Recognition -->
   <FeatureSection 
-    title="Convert signups to active users with sophisticated onboarding flows"
-    subtitle="OPTIMIZE EVERY STEP OF THE CUSTOMER JOURNEY"
-    linkText="Marketing platform"
+    title="Real-time speech recognition that understands worship context"
+    subtitle="ACCURATE CAPTIONS FOR EVERY WORD"
+    linkText="Learn about our technology"
     bullets={[
-      "Account creation and KYC reminders",
-      "Push notifications/email reminders for account completion",
-      "Message templates for every channel",
-      "AI-optimized send times for higher activation rates"
+      "Trained on religious terminology and worship vocabulary",
+      "Handles music, prayers, and sermons with high accuracy",
+      "Automatic punctuation and formatting",
+      "Works with any audio quality or accent"
     ]}
   >
     <div slot="description">
-      <p>Guide new customers from account creation to first transaction with multi-step onboarding flows.</p>
+      <p>Our AI-powered speech recognition is specifically trained for worship services, ensuring accurate captions for sermons, prayers, and announcements.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-      <!-- Mockup for onboarding flow -->
-      <div class="bg-white rounded-xl shadow-lg p-6 w-[80%] max-w-sm relative">
-        <div class="flex items-center gap-2 mb-4">
-          <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold">1</div>
-          <div class="text-sm font-semibold">Create account</div>
+      <!-- Caption Display Mockup -->
+      <div class="bg-white rounded-xl shadow-lg p-6 w-[90%] max-w-lg relative">
+        <div class="flex items-center gap-2 mb-4 pb-3 border-b border-gray-100">
+          <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+          <div class="text-xs font-semibold text-gray-500">LIVE</div>
         </div>
-        <div class="space-y-3">
-          <div class="h-2 bg-gray-100 rounded w-full"></div>
-          <div class="h-8 bg-blue-600 rounded w-full text-white flex items-center justify-center text-sm font-medium">Create account</div>
-          <div class="flex items-center gap-2 mt-4 p-3 bg-green-50 rounded-lg border border-green-100">
-             <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs">✓</div>
-             <div class="text-xs text-green-800">Your verification code is 123456 - do not share this code.</div>
+        <div class="space-y-4">
+          <div class="p-3 bg-gray-50 rounded-lg">
+             <div class="text-sm text-gray-900 leading-relaxed">Today we gather to celebrate and worship together as one community.</div>
           </div>
-        </div>
-        
-        <!-- Floating elements -->
-        <div class="absolute -right-12 top-10 bg-white p-3 rounded-lg shadow-md flex items-center gap-2">
-           <div class="w-6 h-6 bg-gray-900 rounded-full flex items-center justify-center text-white text-xs">$</div>
-           <div class="text-xs font-medium">One step left!</div>
+          <div class="p-3 bg-primary-50 rounded-lg border border-primary-100">
+             <div class="text-sm text-gray-900 leading-relaxed font-medium">Let us open our hearts to the message of hope and love.</div>
+          </div>
+          <div class="p-3 bg-gray-50/50 rounded-lg opacity-60">
+             <div class="text-sm text-gray-600 leading-relaxed">Please turn to page 127 in your hymnal...</div>
+          </div>
         </div>
       </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 2: Deliver authentication -->
+  <!-- Feature 2: Instant Translation -->
   <FeatureSection 
-    title="Deliver authentication instantly"
-    subtitle=""
-    linkText="Data platform"
+    title="Instant translation across 60+ languages"
+    subtitle="BREAK DOWN LANGUAGE BARRIERS"
+    linkText="View all languages"
     reversed={true}
     bullets={[
-      "Real-time OTP codes via SMS, WhatsApp, and push",
-      "Authentication Journeys with automated fallbacks",
-      "End-to-end encryption",
-      "Compliance-ready verification templates"
+      "Support for Spanish, Mandarin, Korean, Arabic, and 56+ more",
+      "Real-time translation with less than 1-second delay",
+      "Culturally appropriate translations for religious content",
+      "Easy language switching for multilingual services"
     ]}
   >
     <div slot="description">
-      <p>Ensure secure logins and transactions with global OTP delivery, fallback options, and end-to-end encryption.</p>
+      <p>Reach every member of your congregation in their native language with instant, accurate translations powered by advanced AI.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-       <!-- Diagram -->
-       <div class="flex flex-col items-center gap-4">
-         <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 w-64 flex items-center gap-3">
-            <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center text-purple-600">⚡</div>
+       <!-- Language Grid -->
+       <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+         <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 font-bold text-lg">EN</div>
             <div class="text-sm">
-               <div class="font-semibold">Trigger</div>
-               <div class="text-xs text-gray-500">Customer makes a purchase</div>
+               <div class="font-semibold">English</div>
+               <div class="text-xs text-gray-500">Primary</div>
             </div>
          </div>
-         <div class="h-8 w-px bg-gray-300"></div>
-         <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 w-64 flex items-center gap-3">
-            <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center text-green-600">💬</div>
+         <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 font-bold text-lg">ES</div>
             <div class="text-sm">
-               <div class="font-semibold">Send SMS</div>
-               <div class="text-xs text-gray-500">Send verification code to...</div>
+               <div class="font-semibold">Español</div>
+               <div class="text-xs text-gray-500">Active</div>
             </div>
          </div>
-         <div class="h-8 w-px bg-gray-300"></div>
-         <div class="bg-orange-50 p-2 rounded-full text-xs text-orange-600 font-medium px-4 border border-orange-100">
-            Conditioner
+         <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 font-bold text-lg">中</div>
+            <div class="text-sm">
+               <div class="font-semibold">中文</div>
+               <div class="text-xs text-gray-500">Active</div>
+            </div>
+         </div>
+         <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex items-center gap-3">
+            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 font-bold text-lg">한</div>
+            <div class="text-sm">
+               <div class="font-semibold">한국어</div>
+               <div class="text-xs text-gray-500">Active</div>
+            </div>
+         </div>
+         <div class="col-span-2 bg-gray-50 p-3 rounded-lg text-center">
+            <div class="text-xs text-gray-500">+ 56 more languages available</div>
          </div>
        </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 3: Send transaction updates -->
+  <!-- Feature 3: Easy Setup -->
   <FeatureSection 
-    title="Send transaction and account updates automatically"
-    subtitle=""
-    linkText="Marketing automation"
+    title="Setup in minutes, not hours"
+    subtitle="DESIGNED FOR CHURCH TECH DIRECTORS"
+    linkText="View setup guide"
     bullets={[
-      "Real-time transaction confirmations via Push",
-      "Low balance and overdraft alerts",
-      "Multi-language and currency localization support",
-      "Spending summaries and insights"
+      "No technical expertise required",
+      "Works with existing audio systems",
+      "Mobile app for quick setup and testing",
+      "Free 4-hour trial to test before committing"
     ]}
   >
     <div slot="description">
-      <p>Keep customers informed with instant, trusted notifications for every financial event.</p>
+      <p>We understand church tech directors are busy. That's why CaptionKit is designed for quick, hassle-free setup with step-by-step guidance.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-       <!-- Mobile list UI -->
-       <div class="bg-white rounded-2xl shadow-lg p-4 w-64 space-y-4">
-          <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg">
-             <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center text-white">$</div>
+       <!-- Setup Steps UI -->
+       <div class="bg-white rounded-2xl shadow-lg p-6 w-80 space-y-4">
+          <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg border border-green-200">
+             <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">✓</div>
              <div>
-                <div class="text-xs font-bold">Transaction received</div>
-                <div class="text-[10px] text-gray-500">You received $45.00 from Paul</div>
+                <div class="text-xs font-bold text-gray-900">Connect audio</div>
+                <div class="text-[10px] text-gray-500">Completed in 3 min</div>
              </div>
           </div>
-          <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg">
-             <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white">atm</div>
+          <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg border border-green-200">
+             <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-bold">✓</div>
              <div>
-                <div class="text-xs font-bold">ATM withdrawal</div>
-                <div class="text-[10px] text-gray-500">$100 from Main Street ATM</div>
+                <div class="text-xs font-bold text-gray-900">Select languages</div>
+                <div class="text-[10px] text-gray-500">Completed in 1 min</div>
              </div>
           </div>
-          <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg">
-             <div class="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center text-white">☕</div>
+          <div class="flex items-center gap-3 p-3 bg-primary-50 rounded-lg border border-primary-200">
+             <div class="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center text-white text-sm font-bold">3</div>
              <div>
-                <div class="text-xs font-bold">Starbucks Coffee</div>
-                <div class="text-[10px] text-gray-500">You spent $4.95</div>
+                <div class="text-xs font-bold text-gray-900">Test captions</div>
+                <div class="text-[10px] text-gray-500">In progress...</div>
              </div>
+          </div>
+          <div class="mt-4 p-3 bg-gray-50 rounded-lg text-center">
+             <div class="text-xs text-gray-500">Estimated time remaining: 2 minutes</div>
           </div>
        </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 4: Keep customers active -->
+  <!-- Feature 4: Affordable Pricing -->
   <FeatureSection 
-    title="Keep customers active and loyal"
-    subtitle=""
-    linkText="Marketing automation"
+    title="Affordable pricing designed for churches"
+    subtitle="ACCESSIBLE TO EVERY CONGREGATION"
+    linkText="View pricing plans"
     reversed={true}
     bullets={[
-      "Product upgrade and feature adoption nudges",
-      "Automated Journeys by event",
-      "Segmentation by customer value",
-      "Built-in A/B testing"
+      "Fraction of the cost of traditional captioning services",
+      "No per-hour fees or hidden charges",
+      "Flexible plans that scale with your congregation size",
+      "Free 4-hour trial with no credit card required"
     ]}
   >
     <div slot="description">
-      <p>Re-engage inactive users and reward loyal ones with personalized campaigns.</p>
+      <p>We believe every church should be able to afford accessibility. Our pricing is transparent and designed to fit church budgets of all sizes.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-       <!-- Email Mockup -->
-       <div class="bg-white rounded-xl shadow-lg w-[80%] overflow-hidden border border-gray-100">
-          <div class="bg-gray-50 p-3 border-b border-gray-100 flex items-center gap-2">
-             <div class="w-3 h-3 rounded-full bg-red-400"></div>
-             <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-             <div class="w-3 h-3 rounded-full bg-green-400"></div>
-          </div>
-          <div class="p-6">
-             <div class="flex items-center gap-2 mb-4">
-                <div class="w-8 h-8 bg-black rounded-full"></div>
-                <div class="text-xs font-semibold">LumePay • info@lumepay.com</div>
+       <!-- Pricing Comparison -->
+       <div class="w-full max-w-md space-y-4">
+          <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
+             <div class="flex justify-between items-start mb-3">
+                <div>
+                   <div class="text-xs text-gray-500 mb-1">Traditional Services</div>
+                   <div class="text-2xl font-bold text-gray-900">$150+</div>
+                </div>
+                <div class="text-xs text-gray-500">per hour</div>
              </div>
-             <div class="text-sm font-bold mb-2">Hi <span class="bg-yellow-100 px-1 rounded text-yellow-800">{`{{FirstName}}`}</span></div>
-             <p class="text-xs text-gray-500 mb-4">
-                We saw you just made your first transfer abroad — welcome to the global stage!
-             </p>
-             <p class="text-xs text-gray-500">
-                Did you know Gold members save up to 1.5% on every currency conversion?
-             </p>
+             <div class="text-xs text-gray-500">Requires advance booking, limited languages</div>
+          </div>
+          <div class="bg-primary-600 rounded-xl shadow-lg p-6 border-2 border-primary-700 relative">
+             <div class="absolute -top-3 right-4 bg-white px-3 py-1 rounded-full text-xs font-bold text-primary-600">BEST VALUE</div>
+             <div class="flex justify-between items-start mb-3">
+                <div>
+                   <div class="text-xs text-primary-100 mb-1">CaptionKit</div>
+                   <div class="text-2xl font-bold text-white">$99</div>
+                </div>
+                <div class="text-xs text-primary-100">per month</div>
+             </div>
+             <div class="text-xs text-primary-100">Unlimited hours, 60+ languages, instant setup</div>
           </div>
        </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 5: Understand what drives -->
+  <!-- Feature 5: Accessibility Compliance -->
   <FeatureSection 
-    title="Understand what drives transactions and engagement"
-    subtitle=""
-    linkText="Marketing automation"
+    title="Meet accessibility standards and serve everyone"
+    subtitle="ADA & WCAG COMPLIANT"
+    linkText="Learn about accessibility"
     bullets={[
-      "Attribution dashboards",
-      "SLA reporting",
-      "Content performance reporting",
-      "Optimal send-time analysis"
+      "Compliant with ADA accessibility requirements",
+      "WCAG 2.1 Level AA standards for digital accessibility",
+      "Customizable text size, colors, and display options",
+      "Screen reader compatible for visually impaired users"
     ]}
   >
     <div slot="description">
-      <p>Identify your highest-impact campaigns so you can invest more in what works and cut what doesn't.</p>
+      <p>Ensure your worship services are accessible to all members of your community, including those with hearing impairments or language barriers.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center px-8">
-       <!-- Chart -->
-       <div class="w-full h-64 flex items-end justify-between gap-2">
-          {#each [40, 60, 30, 80, 50, 70, 45, 65, 35, 55, 75, 45] as height}
-             <div class="w-full bg-indigo-100 rounded-t-sm relative group">
-                <div style="height: {height}%" class="absolute bottom-0 w-full bg-indigo-500 rounded-t-sm transition-all duration-500 group-hover:bg-indigo-600"></div>
-                <div style="height: {height * 0.4}%" class="absolute bottom-0 w-full bg-teal-400 rounded-t-sm opacity-80"></div>
+       <!-- Accessibility Features Grid -->
+       <div class="grid grid-cols-2 gap-6 w-full max-w-md">
+          <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 text-center">
+             <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 mx-auto mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
              </div>
-          {/each}
-       </div>
-       <!-- Legend overlay -->
-       <div class="absolute top-12 right-12 bg-white p-4 rounded-lg shadow-sm border border-gray-100 text-xs">
-          <div class="flex justify-between gap-8 mb-1">
-             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-teal-400"></span> Renewed customers</span>
-             <span class="font-semibold">231</span>
+             <div class="text-xs font-semibold text-gray-900 mb-1">ADA</div>
+             <div class="text-xs text-gray-500">Compliant</div>
           </div>
-          <div class="flex justify-between gap-8 mb-1">
-             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-indigo-500"></span> Won customers</span>
-             <span class="font-semibold">431</span>
+          <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 text-center">
+             <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 mx-auto mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+             </div>
+             <div class="text-xs font-semibold text-gray-900 mb-1">WCAG 2.1</div>
+             <div class="text-xs text-gray-500">Level AA</div>
           </div>
-          <div class="flex justify-between gap-8">
-             <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gray-300"></span> Churned customers</span>
-             <span class="font-semibold">41</span>
+          <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 text-center">
+             <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 mx-auto mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+             </div>
+             <div class="text-xs font-semibold text-gray-900 mb-1">Customizable</div>
+             <div class="text-xs text-gray-500">Display</div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 text-center">
+             <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 mx-auto mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+             </div>
+             <div class="text-xs font-semibold text-gray-900 mb-1">Screen Reader</div>
+             <div class="text-xs text-gray-500">Compatible</div>
           </div>
        </div>
     </div>
   </FeatureSection>
 
-  <!-- Feature 6: Security -->
+  <!-- Feature 6: Worship Software Integration -->
   <FeatureSection 
-    title="Built for security, compliance, and trust"
-    subtitle=""
-    linkText="Marketing automation"
+    title="Integrates with your existing worship software"
+    subtitle="SEAMLESS INTEGRATION"
+    linkText="View all integrations"
     reversed={true}
     bullets={[
-      "ISO 27001 and SOC 2 Type II certified",
-      "End-to-end encryption for all messages",
-      "SLA-backed uptime and instant scaling for high-volume sends",
-      "Compliance with GDPR, CCPA, LGPD, POPI, and UK Data Protection Act"
+      "Works with Planning Center, ProPresenter, and more",
+      "Sync with your service schedule automatically",
+      "Display captions alongside lyrics and announcements",
+      "API access for custom integrations"
     ]}
   >
     <div slot="description">
-      <p>Safeguard sensitive financial data and meet global regulatory requirements while strengthening customer confidence in your brand.</p>
+      <p>CaptionKit works seamlessly with the worship software you already use, making it easy to add captions without changing your workflow.</p>
     </div>
     <div slot="visual" class="w-full h-full flex items-center justify-center">
-       <!-- Compliance Logos Grid -->
-       <div class="grid grid-cols-2 gap-8 opacity-60 grayscale">
-          <div class="flex items-center gap-2 font-bold text-lg"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/></svg> GDPR</div>
-          <div class="flex items-center gap-2 font-bold text-lg">🔒 SOC II</div>
-          <div class="flex items-center gap-2 font-bold text-lg">🏥 HIPAA</div>
-          <div class="flex items-center gap-2 font-bold text-lg">⭕ OAuth</div>
-          <div class="flex items-center gap-2 font-bold text-lg">🌐 ISO/IEC 27001</div>
-          <div class="flex items-center gap-2 font-bold text-lg">🔑 OKTA</div>
+       <!-- Integration Logos Grid -->
+       <div class="grid grid-cols-2 gap-6 w-full max-w-sm">
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center justify-center">
+             <span class="font-bold text-lg text-gray-700">Planning Center</span>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center justify-center">
+             <span class="font-bold text-lg text-gray-700">ProPresenter</span>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center justify-center">
+             <span class="font-bold text-lg text-gray-700">EasyWorship</span>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center justify-center">
+             <span class="font-bold text-lg text-gray-700">MediaShout</span>
+          </div>
+          <div class="col-span-2 bg-primary-50 p-4 rounded-lg border border-primary-100 text-center">
+             <span class="text-sm font-medium text-primary-700">+ Custom API Integration</span>
+          </div>
        </div>
     </div>
   </FeatureSection>

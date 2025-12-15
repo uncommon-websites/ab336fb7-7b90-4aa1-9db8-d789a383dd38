@@ -8,27 +8,49 @@
       <!-- Logo and Nav -->
       <div class="flex items-center gap-8">
         <a href="/" class="flex items-center gap-2">
-          <!-- Bird Logo Placeholder -->
-          <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+          <div class="w-8 h-8 text-primary-600">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.7321 18.4096C15.464 19.0054 15.1307 19.5889 14.7312 20.0937C18.0462 18.9764 20.4865 15.9576 20.7551 12.3344H19.5751C18.135 12.3344 16.9782 13.4839 16.7442 14.9048C16.5284 16.2146 16.1832 17.4073 15.7321 18.4096Z"
+                fill="currentColor"
+              />
+              <path
+                d="M13.122 12.3344C14.6297 12.3344 15.8632 13.5922 15.5862 15.0743C14.9847 18.2935 13.5564 20.5574 11.8901 20.5574C9.78166 20.5574 8.05421 16.9326 7.90082 12.3344H13.122Z"
+                fill="currentColor"
+              />
+              <path
+                d="M16.7748 8.62303C16.9953 10.0573 18.1574 11.2232 19.6085 11.2232H20.7689C20.5856 7.50155 18.1137 4.38174 14.7312 3.24164C15.1307 3.74646 15.464 4.32993 15.7321 4.9257C16.2052 5.97693 16.5618 7.23753 16.7748 8.62303Z"
+                fill="currentColor"
+              />
+              <path
+                d="M15.6307 8.5099C15.8829 9.98453 14.6549 11.2232 13.1588 11.2232H7.89462C7.99881 6.52003 9.74782 2.77795 11.8901 2.77795C13.599 2.77795 15.0576 5.15916 15.6307 8.5099Z"
+                fill="currentColor"
+              />
+              <path
+                d="M6.78316 11.2232C6.83365 8.81927 7.29225 6.60525 8.04807 4.9257C8.31614 4.32993 8.64941 3.74646 9.04901 3.24164C5.66642 4.38174 3.19455 7.50155 3.01129 11.2232H6.78316Z"
+                fill="currentColor"
+              />
+              <path
+                d="M3.02502 12.3344C3.29367 15.9576 5.73401 18.9764 9.04903 20.0937C8.64944 19.5889 8.31616 19.0054 8.0481 18.4096C7.31563 16.7819 6.86229 14.6523 6.78903 12.3344H3.02502Z"
+                fill="currentColor"
+              />
             </svg>
           </div>
-          <span class="font-bold text-xl tracking-tight hidden">Bird</span> <!-- Text hidden in screenshot, just logo? Actually screenshot shows just logo or maybe logo+text. Let's assume just logo or logo+text. Screenshot top left is small. Looks like logo + "Bird" text but text is small. -->
+          <span class="font-bold text-xl tracking-tight">CaptionKit</span>
         </a>
 
         <nav class="hidden md:flex items-center gap-6">
-          <a href="#product" class="text-sm font-medium text-gray-600 hover:text-gray-900">Product</a>
-          <a href="#solutions" class="text-sm font-medium text-gray-600 hover:text-gray-900">Solutions</a>
+          <a href="#features" class="text-sm font-medium text-gray-600 hover:text-gray-900">Features</a>
+          <a href="#pricing" class="text-sm font-medium text-gray-600 hover:text-gray-900">Pricing</a>
           <a href="#resources" class="text-sm font-medium text-gray-600 hover:text-gray-900">Resources</a>
-          <a href="#company" class="text-sm font-medium text-gray-600 hover:text-gray-900">Company</a>
+          <a href="#about" class="text-sm font-medium text-gray-600 hover:text-gray-900">About</a>
         </nav>
       </div>
 
       <!-- Right Actions -->
       <div class="flex items-center gap-4">
         <a href="#login" class="text-sm font-medium text-gray-600 hover:text-gray-900 hidden sm:block">Log in</a>
-        <Button variant="secondary" size="sm" class="!bg-black !text-white !rounded-full px-5">Contact sales</Button>
+        <Button variant="secondary" size="sm" class="!bg-black !text-white !rounded-full px-5">Start free trial</Button>
       </div>
     </div>
   </div>
